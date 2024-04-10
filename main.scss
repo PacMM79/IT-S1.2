@@ -1,41 +1,30 @@
-$primary-color: #5265E1;
-$secondary-color: #FA5959;
+$primary: #5265E1;
+$secondary: #FA5959;
 
-.custom-background1 {
-    top: 50%;
-    left: 100%;
-    right: 0%;
-    transform: translate(-100%, -50%);
-    width: 40%;
-    height: 40%;
-    background-color: $primary-color;
-    border-radius: 500px 0 0 500px;
-    z-index: -1;
-}
 .bg-primary2 {
-    background-color: $primary-color !important;
+    background-color: $primary !important;
 }
 .btn-primary {
-    background-color: $primary-color !important;
-    border-color: $primary-color !important;
+    background-color: $primary !important;
+    border-color: $primary !important;
 }
 .btn-primary:hover {
     background-color: #0423eb00 !important;
-    color: $primary-color !important;
+    color: $primary !important;
 }
 .btn-danger {
-    background-color: $secondary-color !important;
+    background-color: $secondary !important;
 }
 .btn-danger:hover {
     background-color: #fb585800 !important;
-    color: $secondary-color !important;
+    color: $secondary !important;
 }
 .btn-light {
     background-color: #ffffff !important;
     border-color: #ffffff !important;   
 }
 .btn-light:hover {
-    color: $secondary-color !important;
+    color: $secondary !important;
     border-color: #ffffff !important;
 }
 .btn-custom {
@@ -47,9 +36,21 @@ $secondary-color: #FA5959;
     background-color: #d3d3d300 !important;
 }
 .nav-link.active {
-    border-bottom-color: $secondary-color !important;
+    border-bottom-color: $secondary !important;
 }
 .nav-underline .nav-item .nav-link:hover {
-    color: $secondary-color !important;
+    color: $secondary !important;
     border-bottom-color: transparent;
+}
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+}
+.accordion {
+--bs-accordion-btn-focus-box-shadow: unset !important;
+}
+.accordion-button:hover {
+    color: $secondary !important;
+}
+.accordion-button:not(.collapsed)::after {
+    filter: invert(56%) sepia(38%) saturate(3482%) hue-rotate(325deg) brightness(99%) contrast(97%);
 }

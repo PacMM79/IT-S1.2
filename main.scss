@@ -1,6 +1,16 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 
+.navbar-toggler-icon[aria-expanded="true"] {
+    background-image: url(img/icon-close.svg) !important;
+}
+.navbar-toggler-icon {
+    background-image: url(img/icon-hamburger.svg) !important;
+}
+.navbar {
+    --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0) !important;
+    --bs-navbar-toggler-focus-width: 0rem !important;
+}
 .bg-primary2 {
     background-color: $primary !important;
 }
@@ -16,16 +26,16 @@ $secondary: #FA5959;
     background-color: $secondary !important;
 }
 .btn-danger:hover {
-    background-color: #fb585800 !important;
+    background-color: #fff !important;
     color: $secondary !important;
 }
 .btn-light {
-    background-color: #ffffff !important;
-    border-color: #ffffff !important;   
+    background-color: #fff !important;
+    border-color: #fff !important;   
 }
 .btn-light:hover {
     color: $secondary !important;
-    border-color: #ffffff !important;
+    border-color: #fff !important;
 }
 .btn-custom {
     background-color: #e5e5e5 !important;
@@ -53,4 +63,19 @@ $secondary: #FA5959;
 }
 .accordion-button:not(.collapsed)::after {
     filter: invert(56%) sepia(38%) saturate(3482%) hue-rotate(325deg) brightness(99%) contrast(97%);
+}
+.bg-foot-end {
+    background-color: #242946;
+}
+a:hover {
+    color: $secondary !important;
+}
+.social:hover {
+    filter: invert(56%) sepia(38%) saturate(3482%) hue-rotate(325deg) brightness(99%) contrast(97%);
+}
+.ctop-50 {
+    top: 40%;
+}
+.ch-50 {
+    height: 35%;
 }
